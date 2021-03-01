@@ -1,0 +1,21 @@
+
+  <nav class="navbar navbar-default">
+    <div  class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="auth">Autentification</a></li>
+        <li routerLinkActive="active"><a routerLink="appareils">Appareil</a></li>
+        <li routerLinkActive="active"><a routerLink="edit">NouvelAppareil</a></li>
+        <li routerLinkActive="active"><a routerLink="users">Utilisateurs</a></li>
+      </ul>
+      <div class="navbar-right">
+        <p>Vous êtes connecté depuis {{ secondes }} secondes !</p>
+    </div>
+    </div>
+  </nav>
+  <div id="h" class="container">
+    <div class="row">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  

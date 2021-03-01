@@ -1,0 +1,11 @@
+<li [ngClass]="{'list-group-item':true,
+    'list-group-item-success': apparielsatus ==='allume',
+    'list-group-item-danger': apparielsatus ==='etient'}">
+    
+    <h4 [ngStyle]="{color: getcolor()}">Appariel : {{ apparielnamme}}===Status : {{getsatus()}}</h4><br>
+    <a [routerLink]="[id]">Détail</a><br>
+    <button class="btn btn-success" (click)="onswitchOn()"[disabled]="apparielsatus==='allume'">Allume</button>
+    <button class="btn btn-danger"(click)="onswitchOff()"[disabled]="apparielsatus==='etient'">Eteind</button>
+ 
+
+</li>
